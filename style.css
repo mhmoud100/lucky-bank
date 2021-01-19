@@ -1,0 +1,61 @@
+.container{
+			display:grid;
+			
+			grid-template-columns: 2fr repeat(9,1fr) 2fr;
+			grid-template-rows: 2fr repeat(9,1fr) 2fr;
+			height: 100%;
+			grid-column-gap: 5px;  
+			grid-row-gap: 5px;
+			text-align: center;
+			margin: 0px auto;
+			}
+
+		.box{
+			background-color: red;
+			align-content: center;
+			
+		}
+		
+		body{
+			margin: 0px;
+		}
+		.mid{
+			grid-column-start: 2;
+			grid-column-end: 11;
+			grid-row-start: 2;
+			grid-row-end: 11;
+			background-color: green;
+			display: grid;
+			grid-template-columns:repeat(10,1fr) ;
+			grid-template-rows:  repeat(10,1fr) ;
+			grid-gap: 10px;
+		}
+		.test{
+			background-color: blue;
+			height: 100px;
+			width: 100px;
+		}
+		.card1{
+			grid-column-start: 2;
+			grid-column-end: 4;
+			grid-row-start: 2;
+                        grid-row-end: 5;
+                        
+                }
+                .die{
+                        max-width: 150px;
+                        max-height: 150px;
+                        margin: -15px;
+                }
+		.card2{
+			grid-column-start: 8;
+			grid-column-end: 10;
+			grid-row-start: 7;
+			grid-row-end: 10;
+		}
+		.dice{
+			grid-column-start: 5;
+			grid-column-end: 7;
+			grid-row-start: 5;
+			grid-row-end: 7;
+		}
